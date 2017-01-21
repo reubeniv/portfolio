@@ -41,7 +41,7 @@ $("#submit").click(function(){
 
     if($("#password").val() == ""){
         $("#password").css("background-color", "pink");
-        errorMessage += "<li>Passwords must be not empty</li>";
+        errorMessage += "<li>Password must be not empty</li>";
         valid = 0;
     }else {
         $("#password").css("background-color", "#77dd77");
