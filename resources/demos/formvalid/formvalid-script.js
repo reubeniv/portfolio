@@ -23,7 +23,12 @@ $("#submit").click(function(){
     var messageStart = "<ul>"
     var messageEnd = "</ul>"
 
-    if(!isEmail($("#email").val()) || $("#email").val() == ""){
+    var email = $("#email").val().trim();
+    var phone = $("#phone").val().trim();
+    var pass = $("#password").val().trim();
+    var conf = $("#confirm").val().trim();
+
+    if(!isEmail(email) || email == ""){
         $("#email").css("background-color", "pink");
         errorMessage += "<li>Invalid or empty email</li>";
         valid = 0;
@@ -31,7 +36,7 @@ $("#submit").click(function(){
         $("#email").css("background-color", "#77dd77");
     }
 
-    if(!isPhone($("#phone").val()) || $("#phone").val() == ""){
+    if(!isPhone(phone) || phone == ""){
         $("#phone").css("background-color", "pink");
         errorMessage += "<li>Invalid or empty phone</li>";
         valid = 0;
@@ -39,7 +44,7 @@ $("#submit").click(function(){
         $("#phone").css("background-color", "#77dd77");
     }
 
-    if($("#password").val() == ""){
+    if(pass == ""){
         $("#password").css("background-color", "pink");
         errorMessage += "<li>Password must be not empty</li>";
         valid = 0;
@@ -48,7 +53,7 @@ $("#submit").click(function(){
         $("#confirm").css("background-color", "#77dd77");
     }
 
-    if($("#password").val() != $("#confirm").val()){
+    if(pass != conf){
         $("#confirm").css("background-color", "pink");
         errorMessage += "<li>Passwords must match</li>";
         valid = 0;
