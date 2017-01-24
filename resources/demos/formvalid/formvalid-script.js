@@ -5,7 +5,7 @@
         alert("failed");
     });*/
 
-
+var valid = 0;
 
 function isEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -16,9 +16,8 @@ function isPhone(phone) {
     return $.isNumeric(phone);
 }
 
-$("#submit").click(function(){
-
-    var valid = 1;
+var validate = function(){
+    valid = 1;
     var errorMessage = "";
     var messageStart = "<ul>"
     var messageEnd = "</ul>"
@@ -68,6 +67,19 @@ $("#submit").click(function(){
         $(".error-message").html(errorMessage).css({"background-color": "pink", "border-color": "red"}).show();
 
     }
+}
 
+
+$("input").blur(function(){
+    validate();
 });
 
+$("#submit").click(function(){
+    validate();
+
+    if(valid === 1){
+        alert("This form doesn't really submit anything, but if it was wehey the fields are valid");
+    }else{
+        alert("Please correct the fields in red");
+    }
+});
