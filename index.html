@@ -7,10 +7,11 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="resources/css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar sticky-top navbar-toggleable-sm navbar-inverse bg-inverse">
+<nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse">
 	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -21,22 +22,237 @@
 				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">CV</a>
+				<a class="nav-link" href="#cv">CV</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Portfolio</a>
+				<a class="nav-link" href="#portfolio">Portfolio</a>
 			</li>
 		</ul>
 	</div>
 </nav>
 
-<h1>Hello, world!</h1>
 
-<h4>Demos:</h4>
-<ul>
-    <li><a href="resources/demos/formvalid/formvalid.html">JQuery Form</a></li>
-    <li><a href="resources/demos/codebox/codebox.html">CodeBox</a></li>
-</ul>
+<div class="jumbotron center-text">
+	<h1 class="display-3">Shaun Munsey</h1>
+	<p class="lead">Full-Stack Web Developer</p>
+</div>
+
+<div id="cv">
+	<div id="about" class="center-text">
+		<h2>About Me</h2>
+		<p>Full stack web developer and systems engineer with solid agile experience.
+			Studied Software Engineering at Aberystwyth University; specialising in Java and C++, web development,
+			machine learning, and computer graphics. Enjoys volunteering to help children learn to code and served
+			for two years as an army reservist.</p>
+	</div>
+
+	<div class="container center-text" id="skills">
+		<h2>Skills</h2>
+
+		<div class="row">
+
+			<div class="col-sm-6">
+				<h3>Programming Languages</h3>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						Java
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						C++
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						JavaScript
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						Python
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						PHP
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<h3>Database Systems</h3>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						DB2
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						MySQL
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						PostgreSQL
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						Mongo
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4 col-sm-4">
+						ElasticSearch
+					</div>
+					<div class="col-8 col-sm-8">
+						<div class="progress">
+							<div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container center-text" id="experience">
+		<h2>Experience</h2>
+		<h4>Systems Engineer</h4>
+		<h5>Tata Consultancy Services</h5>
+		<h6>November 2016 - Present</h6>
+			<p>
+				Providing IT Infrastructure support for Jaguar Land Rover
+			</p>
+			<p>
+				Specialising in Unix server administration and Cisco networking architecture
+			</p>
+
+		<h4>C++ Developer</h4>
+		<h5>Betcom Games</h5>
+		<h6>June 2016 - November 2016</h6>
+			<p>
+				Implementing designs for land-based gaming machines
+			</p>
+			<p>
+				Designing and implementing mini-games/features
+			</p>
+			<p>
+				Refactoring legacy code and testing
+			</p>
+
+		<h4>Java Software Developer Intern</h4>
+		<h5>The Walt Disney Company EMEA</h5>
+		<h6>June 2014 - July 2015</h6>
+			<p>
+				Maintaining and enhancing a global business application
+			</p>
+			<p>
+				Full-stack development working with Java Spring MVC and ExtJS frameworks
+			</p>
+			<p>
+				Implemented self-driven improvements to existing processes that saved around £1500pa
+			</p>
+	</div>
+
+	<div class="container center-text" id="education">
+		<h2>Education</h2>
+		<h4>BEng Software Engineering</h4>
+		<h5>Aberystwyth University</h5>
+		<h6>September 2012 - July 2016</h6>
+			<p>Graduated 2:1(Hons)</p>
+			<p>Specialised in Java, C++, Web Development, Machine earning, Space Robotics, and Computer Graphics</p>
+			<p>Built a neural net in Python that could detect jazz music</p>
+
+	</div>
+
+	<div class="container center-text" id="interests">
+		<h2>Interests</h2>
+		<div class="row">
+			<div class="col-sm">
+				<h5>Sports</h5>
+				<p>Badminton</p>
+				<p>Cycling</p>
+				<p>Yoga</p>
+			</div>
+			<div class="col-sm">
+				<h5>Literature</h5>
+				<p>Horror</p>
+				<p>Science Fiction</p>
+				<p>History</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container center-text" id="references">
+		<h2>References</h2>
+		<p>hr.london@disney.com</p>
+		<p>contact@betcomgames.com</p>
+	</div>
+</div>
+
+<div id="portfolio">
+	<h4>Demos:</h4>
+	<ul>
+		<li><a href="resources/demos/formvalid/formvalid.html">JQuery Form</a></li>
+		<li><a href="resources/demos/codebox/codebox.html">CodeBox</a></li>
+	</ul>
+</div>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

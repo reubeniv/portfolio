@@ -1,37 +1,16 @@
-body {
-    font-family: helvetica, sans-serif;
-    font-size: 200%;
+.jumbotron{
+    margin-top: 50px;
 }
 
-input {
-    height: 36px;
-    width: 310px;
-    padding: 5px 5px 11px 5px;
-    font-size: 24px;
-    border-radius: 5px;
-    border: 1px solid grey;
+.center-text{
+    text-align: center;
 }
 
-label {
-    position: relative;
-    top: 5px;
-    width: 150px;
-    float: left;
+.list-group-item{
+    border: none;
 }
 
-#wrapper {
-    width: 500px;
-    margin: 0 auto;
-}
-
-.form-element {
-    margin-bottom: 10px;
-}
-
-#submit {
-    width: 150px;
-    height: 60px;
-    font-size: 100%;
-    border-radius: 5px;
-    margin-left: 150px;
+#skills .row{
+    margin-top:25px;
+    margin-bottom:25px;
 }
