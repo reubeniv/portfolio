@@ -16,7 +16,7 @@ $(".toggleButton").hover(function(){
 });
 
 $(".toggleButton").click(function(){
-    $(this).toggleClass("active");
+    $(this).toggleClass("toggle-active");
     var panelId = $(this).attr("id") + "Panel";
     $("#"+panelId).toggleClass("hidden");
     var numberOfPanels = 4 - ($(".hidden").length);

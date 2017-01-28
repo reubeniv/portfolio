@@ -2,10 +2,31 @@
 <html>
 <head>
     <title>Shaun Munsey - JQuery Demo 2</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="codebox-style.css">
 </head>
 <body>
+
+<nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">shaunmunsey.com</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../../../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <a class="nav-link" href="mailto:s_munsey@live.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a class="nav-link" href="https://www.linkedin.com/in/smunsey" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="nav-link" href="https://www.twitter.com/s_munsey" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a class="nav-link" href="https://github.com/reubeniv" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+</nav>
 
 <div id="header">
     <div id="logo">
@@ -13,13 +34,12 @@
     </div>
 
     <div id="buttonContainer">
-        <div class="toggleButton active" id="html">HTML</div>
+        <div class="toggleButton toggle-active" id="html">HTML</div>
         <div class="toggleButton" id="css">CSS</div>
         <div class="toggleButton" id="js">JS</div>
-        <div class="toggleButton active" id="output">Output</div>
+        <div class="toggleButton toggle-active" id="output">Output</div>
     </div>
 
-    <a href="../../../index.html">Home</a>
 </div>
 
 <div id="bodyContainer">
@@ -30,6 +50,8 @@
 </div>
 
 <script src="codebox-script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </body>
 </html>

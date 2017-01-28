@@ -2,11 +2,32 @@
 <html>
 <head>
     <title> Shaun Munsey -JQuery Demo</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--  Bootstrap CSS  -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="resources/css/style.css"/>
+
     <link rel="stylesheet" href="formvalid-style.css">
 </head>
 <body>
-    <p><a href="../../../index.html">Home</a></p>
+    <nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">shaunmunsey.com</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <a class="nav-link" href="mailto:s_munsey@live.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/smunsey" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="nav-link" href="https://www.twitter.com/s_munsey" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="nav-link" href="https://github.com/reubeniv" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </nav>
     <div id="wrapper">
 
         <div class="form-element">
@@ -34,6 +55,11 @@
         <div class="error-message"></div>
     </div>
 </body>
+
+<!--  jQuery first, then Tether, then Bootstrap JS.  -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <script src="formvalid-script.js"></script>
 </html>

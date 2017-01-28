@@ -1,5 +1,10 @@
 /*written by Shaun Munsey... kinda, I'm sure there'll be more*/
-
-$("navbar a").click(function(){
-    $('body').scrollTo('#target');
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top-60
+        }, 1000);
+    }
 });

@@ -5,10 +5,11 @@ body{
 }
 
 #header{
-    with: 100%;
+    margin-top: 60px;
+    width: 100%;
     background: #EEEEEE;
     padding: 5px;
-    height: 30px;
+    height: 60px;
 }
 
 #logo{
@@ -46,7 +47,7 @@ a{
     border-right: 1px solid grey;
 }
 
-.active{
+.toggle-active{
     background-color: lightblue;
     font-weight: bold;
 }
@@ -63,7 +64,7 @@ textarea{
 
 .panel{
     float: left;
-    left-border: none;
+    border-left: none;
 }
 
 iframe{
