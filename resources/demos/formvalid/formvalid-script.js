@@ -55,14 +55,17 @@ var validate_pass = function(){
         valid = 0;
     }else {
         $("#password").css("background-color", "#77dd77");
+        validate_conf();
     }
+
+
 }
 
 var validate_conf = function(){
     var conf = $("#confirm").val().trim();
     var pass = $("#password").val().trim();
 
-    if(pass != conf){
+    if(pass != conf || conf == ""){
         $("#confirm").css("background-color", "pink");
         errorMessage += "<li>Passwords must match</li>";
         valid = 0;
