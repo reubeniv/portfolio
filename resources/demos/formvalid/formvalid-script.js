@@ -47,6 +47,7 @@ var validate_phone = function(){
 
 var validate_pass = function(){
     var pass = $("#password").val().trim();
+    var conf = $("#confirm").val().trim();
 
     if(pass == ""){
         $("#password").css("background-color", "pink");
@@ -100,9 +101,9 @@ $("input").blur(function(){
         validate_email();
     }else if(input_id == "phone"){
         validate_phone();
-    }else if(input_id == "pass"){
+    }else if(input_id == "password"){
         validate_pass();
-    }else if(input_id == "conf"){
+    }else if(input_id == "confirm"){
         validate_conf();
     }
 
