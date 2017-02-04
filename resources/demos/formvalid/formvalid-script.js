@@ -55,7 +55,6 @@ var validate_pass = function(){
         valid = 0;
     }else {
         $("#password").css("background-color", "#77dd77");
-        $("#confirm").css("background-color", "#77dd77");
     }
 }
 
