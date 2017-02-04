@@ -66,6 +66,8 @@ var validate_conf = function(){
         $("#confirm").css("background-color", "pink");
         errorMessage += "<li>Passwords must match</li>";
         valid = 0;
+    }else{
+        $("#confirm").css("background-color", "#77dd77");
     }
 
     return valid;
